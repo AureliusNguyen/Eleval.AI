@@ -25,18 +25,18 @@ export default function Layout({ children }) {
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
       <div
-        className={`bg-indigo-800 w-64 min-h-screen flex-shrink-0 ${sidebarOpen ? "" : "hidden"} md:block`}
+        className={`bg-red-600 w-64 min-h-screen flex-shrink-0 ${sidebarOpen ? "" : "hidden"} md:block`}
       >
         <div className="p-4">
-          <h1 className="text-2xl font-bold text-white">Prompt Pilot</h1>
+          <h1 className="text-2xl font-bold text-white">Eleval.AI</h1>
         </div>
         <nav className="mt-8">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className={`flex items-center px-4 py-2 text-gray-200 hover:bg-indigo-700 ${
-                pathname === item.href ? "bg-indigo-700 text-white" : ""
+              className={`flex items-center px-4 py-2 text-gray-200 hover:bg-red-700 ${
+                pathname === item.href ? "bg-red-700 text-white" : ""
               }`}
             >
               <item.icon className="mr-3 h-5 w-5" />

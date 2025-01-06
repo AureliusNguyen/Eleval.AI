@@ -82,12 +82,12 @@ export default function MultiLLMInterface() {
             placeholder="Enter your prompt here"
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
-            className="min-h-[100px]"
+            className="min-h-[100px] text-black"
           />
           <Button
             onClick={handleSubmit}
             disabled={selectedModels.length === 0 || prompt.trim() === ""}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white"
+            className="bg-red-600 hover:bg-red-700 text-white"
           >
             Submit to Selected Models
           </Button>
@@ -121,9 +121,9 @@ export default function MultiLLMInterface() {
           })}
           <Dialog open={isAddingModel} onOpenChange={setIsAddingModel}>
             <DialogTrigger asChild>
-              <Card className="flex items-center justify-center cursor-pointer hover:bg-indigo-50 transition-colors h-full min-h-[300px] border-2 border-dashed border-indigo-300">
+              <Card className="flex items-center justify-center cursor-pointer hover:bg-red-50 transition-colors h-full min-h-[300px] border-2 border-dashed border-red-300">
                 <CardContent>
-                  <div className="flex flex-col items-center justify-center text-indigo-600 hover:text-indigo-800">
+                  <div className="flex flex-col items-center justify-center text-red-600 hover:text-red-800">
                     <Plus className="h-12 w-12 mb-2" />
                     <span className="text-sm">Add Model</span>
                   </div>

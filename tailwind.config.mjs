@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#4F46E5", // Tailwind blue-500
+          DEFAULT: "#EF4444", // Tailwind blue-500
           foreground: "white",
         },
         secondary: {

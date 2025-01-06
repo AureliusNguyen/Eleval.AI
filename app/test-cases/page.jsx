@@ -41,7 +41,7 @@ export default function TestCasesManagement() {
           </div>
           <Link
             href="/test-cases/new"
-            className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-md bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:red-500 focus:ring-offset-2"
           >
             <PlusCircle className="mr-2 h-4 w-4" />
             New Test Case
@@ -50,7 +50,7 @@ export default function TestCasesManagement() {
 
         <div className="overflow-x-auto rounded-lg border border-gray-200">
           <table className="min-w-full divide-y divide-gray-200">
-            <thead className="bg-indigo-50">
+            <thead className="bg-red-50">
               <tr>
                 <th scope="col" className="relative px-6 py-3">
                   <Checkbox
@@ -137,7 +137,7 @@ export default function TestCasesManagement() {
                   <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <Button
                       variant="ghost"
-                      className="text-indigo-600 hover:text-indigo-900"
+                      className="text-red-600 hover:text-red-900"
                       onClick={() =>
                         router.push(`/test-cases/edit/${testCase.id}`)
                       }
